@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
+import Opening from './Opening'
 
 function Main() {
   return (
-    <main>
-      main content
+    <main >
+      <Opening/>
     </main>
   )
 }
