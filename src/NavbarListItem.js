@@ -2,12 +2,17 @@ import React from 'react'
 
 function NavbarListItem(props) {
     return (
-        <li className="nav-item text-center">
+        <li
+            className="nav-item text-center"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+        >
             <a
                 className="nav-link text-light"
-                href="#"
-                data-toggle="collapse"
-                data-target="#collapsibleNavbar">Link {props.name}</a>
+                href={props.link}
+            >
+                {props.name}
+            </a>
         </li>
     )
 }

@@ -1,12 +1,16 @@
 import React from 'react'
-import Opening from './Opening'
+import Gallery from './Gallery'
 import ReadMore from './ReadMore'
+import Statistics from './Statistics'
+import Intro from './Intro'
 
 function Main() {
   return (
-    <main >
-      <Opening/>
-      <ReadMore/>
+    <main>
+      <Intro />
+      <ReadMore />
+      <Gallery />
+      <Statistics />
     </main>
   )
 }

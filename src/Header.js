@@ -55,10 +55,10 @@ class Header extends Component {
                         </button>
                         <div className=" col-lg-7 offset-lg-4 collapse navbar-collapse" id="collapsibleNavbar">
                             <ul className="navbar-nav col-lg-12 justify-content-between">
-                                <NavbarListItem name="1" />
-                                <NavbarListItem name="2" />
-                                <NavbarListItem name="3" />
-                                <NavbarListItem name="4" />
+                                <NavbarListItem name="Intro" link="#intro" />
+                                <NavbarListItem name="Gallery" link="#gallery" />
+                                <NavbarListItem name="Statistics" link="#statistics" />
+                                <NavbarListItem name="Contact" link="#contact" />
                             </ul>
                         </div>
                     </nav>
@@ -68,8 +68,8 @@ class Header extends Component {
                     <h1>Wonderful World Of Desert Templates</h1>
                 </section>
 
-                <div className="header_arrow">
-                    <a href="#">
+                <div className="header-arrow">
+                    <a href="#intro">
                         <i className="fa fa-angle-down"></i>
                     </a>
                 </div>
