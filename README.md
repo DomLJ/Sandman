@@ -45,5 +45,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Demo
 
-[https://domlj.github.io/Brewfinder](https://domlj.github.io/Sandman)
+[https://domlj.github.io/Sandman](https://domlj.github.io/Sandman)
 
