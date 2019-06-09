@@ -2,7 +2,7 @@ import React from 'react';
 
 function GalleryTile(props) {
     return (
-        <div className="tile col-lg-3">
+        <div className="tile col-lg-3 col-md-6">
             <figure>
                 <img src={`images/${props.src}`} alt="" title={props.credit}></img>
             </figure>

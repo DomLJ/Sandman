@@ -41,7 +41,7 @@ class Header extends Component {
     render() {
         return (
             <header className="col-lg-12">
-                <div className="header_container">
+                <div className="header-container">
                     <nav className={`navbar navbar-expand-lg fixed-top navbar-dark ${this.state.navBackground}`}>
                         <a className="navbar-brand col-lg-1 text-lg-center col-1 text-center text-light" href="#">Logo</a>
                         <button
@@ -58,7 +58,7 @@ class Header extends Component {
                                 <NavbarListItem name="Intro" link="#intro" />
                                 <NavbarListItem name="Gallery" link="#gallery" />
                                 <NavbarListItem name="Statistics" link="#statistics" />
-                                <NavbarListItem name="Contact" link="#contact" />
+                                <NavbarListItem name="Footer" link="#footer" />
                             </ul>
                         </div>
                     </nav>

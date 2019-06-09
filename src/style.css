@@ -199,7 +199,6 @@ main {
 .statistics {
   margin-top: 5vh;
   padding-top: 7vh;
-  margin-bottom: 15vh;
   background-image: linear-gradient(rgba(18, 8, 56, 0.6), rgba(18, 8, 56, 0.6)), url("/images/patrick-schneider-1062220-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -216,8 +215,55 @@ main {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #999999;
+  padding-bottom: 3vh;
+  font-size: 90%;
+}
+footer .container {
+  padding-top: 10vh;
+}
+footer .container h5 {
+  color: white;
+  padding-bottom: 1vh;
+}
+footer .container ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+footer .container ul li {
+  padding-bottom: 1vh;
+}
+footer .container ul li a {
+  color: inherit;
+}
+footer .container ul li a:hover {
+  color: #991616;
+  text-decoration: none;
+}
+footer .container .footer-ending {
+  border-top: 1px solid #999999;
+  padding-top: 2vh;
+}
+footer .container .footer-ending .signature {
+  padding-top: 1vh;
+}
+footer .container .footer-ending .signature p {
+  color: white;
+  margin-bottom: 0;
+}
+footer .container .footer-ending .signature a {
+  color: #991616;
+}
+footer .container .social {
+  padding-top: 1vh;
+}
+footer .container .social li a i {
+  font-size: 150%;
+  color: white;
+}
+footer .container .social li a i:hover {
+  color: #991616;
 }
 
 /*# sourceMappingURL=style.css.map */
