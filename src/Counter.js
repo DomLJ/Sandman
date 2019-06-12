@@ -45,7 +45,7 @@ class Counter extends Component {
     render() {
         return (
             <div className="counter col-lg-4">
-                <h3 className="text-center" id={`counter${this.props.id}`} >{this.state.counter.toLocaleString()}</h3>
+                <h3 className="value text-center" id={`counter${this.props.id}`} >{this.state.counter.toLocaleString()}</h3>
                 <p className="text-center">{this.props.unit}</p>
             </div>
         )

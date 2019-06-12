@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:700|Rubik&display=swap");
 html {
   font-size: 1.3em;
   scroll-behavior: smooth;
@@ -6,6 +7,19 @@ html {
 body {
   margin: 0;
   background-color: #f7f7f7 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Karla", sans-serif;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -72,6 +86,7 @@ header .header-arrow i {
   border-radius: 50%;
   background-color: #3a3a3a;
   padding: 0.4em 0.6em;
+  color: white;
 }
 header .header-arrow i:hover {
   background-color: #080808;
@@ -199,7 +214,7 @@ main {
 .statistics {
   margin-top: 5vh;
   padding-top: 7vh;
-  background-image: linear-gradient(rgba(18, 8, 56, 0.6), rgba(18, 8, 56, 0.6)), url("./images/patrick-schneider-1062220-unsplash.jpg");
+  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/patrick-schneider-1062220-unsplash.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -212,6 +227,9 @@ main {
 }
 .statistics .counter-container .counter {
   padding-top: 25vh;
+}
+.statistics .counter-container .counter .value {
+  font-size: 150%;
 }
 
 footer {

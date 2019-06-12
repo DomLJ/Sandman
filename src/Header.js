@@ -40,7 +40,7 @@ class Header extends Component {
 
     render() {
         return (
-            <header className="col-lg-12">
+            <header className="col-lg-12" id="#">
                 <div className="header-container">
                     <nav className={`navbar navbar-expand-lg fixed-top navbar-dark ${this.state.navBackground}`}>
                         <a className="navbar-brand col-lg-1 text-lg-center col-1 text-center text-light" href="#">Logo</a>
