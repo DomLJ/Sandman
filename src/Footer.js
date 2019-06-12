@@ -55,7 +55,11 @@ function Footer() {
 
             <ul className="social col-md-3 col-12 d-flex justify-content-md-end justify-content-center">
               <li>
-                <a href="#">
+                <a
+                  href="https://github.com/DomLJ/Sandman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fab fa-github"></i>
                 </a>
               </li>
