@@ -24,7 +24,7 @@ body {
 header {
   height: 100vh;
   width: 100vw;
-  background-image: url("/images/jared-verdi-420154-unsplash.jpg");
+  background-image: url("./images/jared-verdi-420154-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -193,7 +193,7 @@ main {
 .read-more {
   margin-top: 10vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("/images/fernando-paredes-murillo-462122-unsplash.jpg");
+    url("./images/fernando-paredes-murillo-462122-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -225,7 +225,7 @@ main {
   margin-top: 5vh;
   padding-top: 7vh;
   background-image: linear-gradient(rgba(18, 8, 56, 0.6), rgba(18, 8, 56, 0.6)),
-    url("/images/patrick-schneider-1062220-unsplash.jpg");
+    url("./images/patrick-schneider-1062220-unsplash.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -245,7 +245,6 @@ main {
 
 footer {
   $footer-color: rgb(153, 153, 153);
-
   background-color: rgba(0, 0, 0, 0.87);
   color: $footer-color;
   padding-bottom: 3vh;

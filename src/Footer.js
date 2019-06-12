@@ -56,7 +56,7 @@ function Footer() {
             <ul className="social col-md-3 col-12 d-flex justify-content-md-end justify-content-center">
               <li>
                 <a href="#">
-                  <i class="fab fa-github"></i>
+                  <i className="fab fa-github"></i>
                 </a>
               </li>
             </ul>
