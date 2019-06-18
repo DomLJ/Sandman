@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:700|Rubik&display=swap");
+@mixin mediaImage($proportions){
+  header {
+    background-image: url("./images/Atacama#{$proportions}.jpg");
+  }
+  .read-more {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco#{$proportions}.jpg");
+  }
+  .statistics {
+    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi#{$proportions}.jpg");
+  }
+}
 
 $primary-red: rgb(153, 22, 22);
 
@@ -38,7 +49,7 @@ p {
 header {
   height: 100vh;
   width: 100vw;
-  background-image: url("./images/jared-verdi-420154-unsplash.jpg");
+  background-image: url("./images/Atacama1920x1280.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -175,7 +186,7 @@ main {
       flex-wrap: nowrap;
       padding-top: 1vh;
       position: relative;
-      top:0;
+      top: 0;
       transition: all 1s;
       opacity: 1;
 
@@ -207,19 +218,18 @@ main {
         padding-bottom: 1vh;
       }
     }
-    
+
     .tile-invisible {
       opacity: 0;
       position: relative;
-      top:4vh;
+      top: 4vh;
     }
   }
 }
 
 .read-more {
   margin-top: 10vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("./images/fernando-paredes-murillo-462122-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1920x1280.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -250,8 +260,7 @@ main {
 .statistics {
   margin-top: 5vh;
   padding-top: 7vh;
-  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)),
-    url("./images/patrick-schneider-1062220-unsplash.jpg");
+  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1920x1280.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -338,4 +347,24 @@ footer {
       }
     }
   }
+}
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+  @include mediaImage(1366x768)
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  @include mediaImage(768x432)
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  @include mediaImage(1024x1366)
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  @include mediaImage(768x1024)
+}
+
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  @include mediaImage(420x560)
 }

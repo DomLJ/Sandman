@@ -41,7 +41,7 @@ p {
 header {
   height: 100vh;
   width: 100vw;
-  background-image: url("./images/jared-verdi-420154-unsplash.jpg");
+  background-image: url("./images/Atacama1920x1280.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -195,7 +195,7 @@ main {
 
 .read-more {
   margin-top: 10vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/fernando-paredes-murillo-462122-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1920x1280.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -223,7 +223,7 @@ main {
 .statistics {
   margin-top: 5vh;
   padding-top: 7vh;
-  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/patrick-schneider-1062220-unsplash.jpg");
+  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1920x1280.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -292,6 +292,72 @@ footer .container .social li a i {
 }
 footer .container .social li a i:hover {
   color: #991616;
+}
+
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+  header {
+    background-image: url("./images/Atacama1366x768.jpg");
+  }
+
+  .read-more {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1366x768.jpg");
+  }
+
+  .statistics {
+    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1366x768.jpg");
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  header {
+    background-image: url("./images/Atacama768x432.jpg");
+  }
+
+  .read-more {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco768x432.jpg");
+  }
+
+  .statistics {
+    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi768x432.jpg");
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  header {
+    background-image: url("./images/Atacama1024x1366.jpg");
+  }
+
+  .read-more {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1024x1366.jpg");
+  }
+
+  .statistics {
+    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1024x1366.jpg");
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  header {
+    background-image: url("./images/Atacama768x1024.jpg");
+  }
+
+  .read-more {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco768x1024.jpg");
+  }
+
+  .statistics {
+    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi768x1024.jpg");
+  }
+}
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  header {
+    background-image: url("./images/Atacama420x560.jpg");
+  }
+
+  .read-more {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco420x560.jpg");
+  }
+
+  .statistics {
+    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi420x560.jpg");
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -26,7 +26,7 @@ function Intro() {
 
                 <div className="intro-photo col-lg-6 ">
                     <figure className="img-container">
-                        <img src="./images/andres-sanz-100047-unsplash.jpg" alt="" ></img>
+                        <img src="./images/Mexico1200x800.jpg" alt="" ></img>
                     </figure>
                 </div>
             </div>
