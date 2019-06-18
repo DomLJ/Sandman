@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:700|Rubik&display=swap");
-@mixin mediaImage($proportions){
+
+@mixin mediaImage($proportions) {
   header {
     background-image: url("./images/Atacama#{$proportions}.jpg");
   }
   .read-more {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco#{$proportions}.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      url("./images/Morocco#{$proportions}.jpg");
   }
   .statistics {
-    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi#{$proportions}.jpg");
+    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)),
+      url("./images/Gobi#{$proportions}.jpg");
   }
 }
 
@@ -181,14 +184,13 @@ main {
     padding-left: 3%;
     padding-right: 3%;
 
-    .tile-visible {
+    .tile {
       height: 100%;
       flex-wrap: nowrap;
       padding-top: 1vh;
       position: relative;
-      top: 0;
-      transition: all 1s;
       opacity: 1;
+      transition: all 1s;
 
       figure {
         display: block;
@@ -218,11 +220,9 @@ main {
         padding-bottom: 1vh;
       }
     }
-
-    .tile-invisible {
+    
+    .invisible {
       opacity: 0;
-      position: relative;
-      top: 4vh;
     }
   }
 }
@@ -350,21 +350,21 @@ footer {
 }
 
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
-  @include mediaImage(1366x768)
+  @include mediaImage(1366x768);
 }
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
-  @include mediaImage(768x432)
+  @include mediaImage(768x432);
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
-  @include mediaImage(1024x1366)
+  @include mediaImage(1024x1366);
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
-  @include mediaImage(768x1024)
+  @include mediaImage(768x1024);
 }
 
 @media only screen and (max-width: 420px) and (orientation: portrait) {
-  @include mediaImage(420x560)
+  @include mediaImage(420x560);
 }

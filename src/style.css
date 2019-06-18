@@ -154,16 +154,15 @@ main {
   padding-left: 3%;
   padding-right: 3%;
 }
-.gallery .row .tile-visible {
+.gallery .row .tile {
   height: 100%;
   flex-wrap: nowrap;
   padding-top: 1vh;
   position: relative;
-  top: 0;
-  transition: all 1s;
   opacity: 1;
+  transition: all 1s;
 }
-.gallery .row .tile-visible figure {
+.gallery .row .tile figure {
   display: block;
   position: relative;
   height: 0;
@@ -171,7 +170,7 @@ main {
   width: 100%;
   margin: auto;
 }
-.gallery .row .tile-visible figure img {
+.gallery .row .tile figure img {
   position: absolute;
   top: 0;
   left: 5%;
@@ -179,18 +178,16 @@ main {
   height: 90%;
   border-radius: 50%;
 }
-.gallery .row .tile-visible h3 {
+.gallery .row .tile h3 {
   text-align: center;
   padding-top: 1vw;
 }
-.gallery .row .tile-visible p {
+.gallery .row .tile p {
   text-align: justify;
   padding-bottom: 1vh;
 }
-.gallery .row .tile-invisible {
+.gallery .row .invisible {
   opacity: 0;
-  position: relative;
-  top: 4vh;
 }
 
 .read-more {

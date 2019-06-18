@@ -6,6 +6,7 @@ class GalleryTile extends Component {
         this.state = {
             visibility: "invisible"
         }
+        this.fadeIn=this.fadeIn.bind(this)
     }
 
     fadeIn() {
@@ -29,7 +30,7 @@ class GalleryTile extends Component {
 
     render() {
         return (
-            <div className={`tile-${this.state.visibility} col-lg-3 col-md-6`} id={this.props.place}>
+            <div className={`tile ${this.state.visibility} col-lg-3 col-md-6`} id={this.props.place}>
                 <figure>
                     <img src={`images/${this.props.src}`} alt="" title={this.props.credit}></img>
                 </figure>
