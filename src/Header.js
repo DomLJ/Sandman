@@ -43,7 +43,7 @@ class Header extends Component {
             <header className="col-lg-12" id="#">
                 <div className="header-container">
                     <nav className={`navbar navbar-expand-lg fixed-top navbar-dark ${this.state.navBackground}`}>
-                        <a className="navbar-brand col-lg-1 text-lg-center col-1 text-center text-light" href="#">Logo</a>
+                        <a className="navbar-brand col-lg-1 text-lg-center col-1 text-center text-light logo" href="#">Sandman</a>
                         <button
                             className="navbar-toggler"
                             type="button"
@@ -64,7 +64,7 @@ class Header extends Component {
                     </nav>
                 </div>
 
-                <section className="offset-sm-1 col-sm-3">
+                <section className="offset-1 col-md-3 col-sm-5 col-9">
                     <h1>Wonderful World Of Desert Templates</h1>
                 </section>
 

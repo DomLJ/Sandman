@@ -5,6 +5,7 @@ function Footer() {
     <footer id="footer">
       <div className="container">
         <div className="row">
+          
           <div className="footer-about col-md-5">
             <h5 className="text-center text-md-left">
               About
@@ -21,20 +22,20 @@ function Footer() {
           <div className="col-md-3 offset-md-1 col-6 text-md-left text-center">
             <h5>Links</h5>
             <ul>
-              <li><a href="#">example link 1</a></li>
-              <li><a href="#">example link 2</a></li>
-              <li><a href="#">example link 3</a></li>
-              <li><a href="#">example link 4</a></li>
+              <li><a href="#placeholder">example link 1</a></li>
+              <li><a href="#placeholder">example link 2</a></li>
+              <li><a href="#placeholder">example link 3</a></li>
+              <li><a href="#placeholder">example link 4</a></li>
             </ul>
           </div>
 
           <div className="col-md-3 col-6 text-md-left text-center">
             <h5>Links</h5>
             <ul>
-              <li><a href="#">example link 1</a></li>
-              <li><a href="#">example link 2</a></li>
-              <li><a href="#">example link 3</a></li>
-              <li><a href="#">example link 4</a></li>
+              <li><a href="#placeholder">example link 1</a></li>
+              <li><a href="#placeholder">example link 2</a></li>
+              <li><a href="#placeholder">example link 3</a></li>
+              <li><a href="#placeholder">example link 4</a></li>
             </ul>
           </div>
         </div>
@@ -65,6 +66,7 @@ function Footer() {
                 </a>
               </li>
             </ul>
+
           </div>
         </div>
       </div>

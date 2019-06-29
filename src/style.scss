@@ -14,6 +14,12 @@
   }
 }
 
+@mixin parallax() {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 $primary-red: rgb(153, 22, 22);
 
 html {
@@ -33,7 +39,8 @@ h6 {
   font-family: "Karla", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: "Rubik", sans-serif;
 }
 ::-webkit-scrollbar {
@@ -53,15 +60,19 @@ header {
   height: 100vh;
   width: 100vw;
   background-image: url("./images/Atacama1920x1280.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  @include parallax();
+  color: white;
 
   nav {
     transition: all 0.8s linear;
 
     &.nav-scrolled {
       background-color: rgba(3, 3, 3, 0.95);
+    }
+
+    .logo {
+      font-size: 1.35em;
+      font-weight: 700;
     }
 
     ul {
@@ -81,7 +92,6 @@ header {
   section {
     position: absolute;
     top: 22vh;
-    color: white;
     border-left: 4px solid $primary-red;
     text-shadow: 1px 1px black;
   }
@@ -104,7 +114,6 @@ header {
       border-radius: 50%;
       background-color: rgb(58, 58, 58);
       padding: 0.4em 0.6em;
-      color: white;
 
       &:hover {
         background-color: rgb(8, 8, 8);
@@ -169,7 +178,7 @@ main {
   width: 100%;
   margin: 0;
 
-  h2,
+  h1,
   p {
     text-align: center;
   }
@@ -220,7 +229,7 @@ main {
         padding-bottom: 1vh;
       }
     }
-    
+
     .invisible {
       opacity: 0;
     }
@@ -228,12 +237,9 @@ main {
 }
 
 .read-more {
-  margin-top: 10vh;
+  @include parallax();
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1920x1280.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100%;
+  margin-top: 10vh;
   color: white;
 
   .text-container {
@@ -245,7 +251,7 @@ main {
       background-color: rgba(0, 0, 0, 0);
       text-align: center;
       color: white;
-      font-size: 20px;
+      font-size: 1em;
       padding: 12px 24px;
 
       &:hover {
@@ -258,12 +264,10 @@ main {
 }
 
 .statistics {
+  @include parallax();
+  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1920x1280.jpg");
   margin-top: 5vh;
   padding-top: 7vh;
-  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1920x1280.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   color: white;
 
   h1 {
@@ -277,7 +281,7 @@ main {
       padding-top: 25vh;
 
       .value {
-        font-size: 150%;
+        font-size: 1.5em;
       }
     }
   }
@@ -288,7 +292,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.87);
   color: $footer-color;
   padding-bottom: 3vh;
-  font-size: 90%;
+  font-size: 0.9em;
 
   .container {
     padding-top: 10vh;
@@ -336,7 +340,7 @@ footer {
       li {
         a {
           i {
-            font-size: 150%;
+            font-size: 1.5em;
             color: white;
 
             &:hover {
@@ -351,20 +355,124 @@ footer {
 
 @media only screen and (max-width: 1366px) and (orientation: landscape) {
   @include mediaImage(1366x768);
+
+  .intro {
+    padding-top: 15vh;
+  }
+
+  .gallery {
+    padding-top: 12vh;
+  }
 }
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
   @include mediaImage(768x432);
+
+  header {
+    section {
+      top: 35vh;
+      border-left: 3px solid $primary-red;
+      text-shadow: 1px 1px black;
+
+      h1 {
+        font-size: 1.2em;
+      }
+    }
+    .header-arrow {
+      top: 82vh;
+
+      i {
+        font-size: 0.9em;
+      }
+    }
+  }
+  .intro {
+    padding-top: 28vh;
+  }
+  .gallery {
+    padding-top: 28vh;
+  }
+  .statistics {
+    padding-top: 22vh;
+  }
+  footer {
+    padding-top: 22vh;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
   @include mediaImage(1024x1366);
+
+  .header-arrow {
+    bottom: 10%;
+    i {
+      font-size: 1.5em;
+    }
+  }
+
+  .intro {
+    padding-top: 8vh;
+  }
+  .gallery {
+    padding-top: 8vh;
+  }
+
+  .statistics {
+    padding-top: 0vh;
+
+    h1 {
+      padding-top: 4vh;
+    }
+    .counter-container {
+      .counter {
+        padding-top: 20vh;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   @include mediaImage(768x1024);
+  .statistics {
+    padding-top: 5vh;
+
+    .counter-container {
+      .counter {
+        padding-top: 10vh;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 420px) and (orientation: portrait) {
   @include mediaImage(420x560);
+  header {
+    section {
+      font-size: 1.8em;
+    }
+    .header-arrow {
+      bottom: 12%;
+      i {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .intro {
+    padding-top: 15vh;
+  }
+  .gallery {
+    padding-top: 14vh;
+  }
+  .statistics {
+    padding-top: 15vh;
+
+    .counter-container {
+      .counter {
+        padding-top: 16vh;
+      }
+    }
+  }
+  footer {
+    padding-top: 10vh;
+  }
 }

@@ -10,9 +10,8 @@ class GalleryTile extends Component {
     }
 
     fadeIn() {
-        const id = this.props.place
-        const div = document.getElementById(id)
-        const targetPosition = div.getBoundingClientRect().top
+        const id = this.props.place 
+        const targetPosition = document.getElementById(id).getBoundingClientRect().top
         const viewHeight = window.innerHeight
 
         if (viewHeight > targetPosition && this.state.visibility === "invisible") {

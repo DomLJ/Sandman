@@ -18,7 +18,8 @@ h6 {
   font-family: "Karla", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: "Rubik", sans-serif;
 }
 
@@ -45,12 +46,17 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: white;
 }
 header nav {
   transition: all 0.8s linear;
 }
 header nav.nav-scrolled {
   background-color: rgba(3, 3, 3, 0.95);
+}
+header nav .logo {
+  font-size: 1.35em;
+  font-weight: 700;
 }
 header nav ul a {
   background-image: linear-gradient(#991616, #991616);
@@ -65,7 +71,6 @@ header nav ul a:hover {
 header section {
   position: absolute;
   top: 22vh;
-  color: white;
   border-left: 4px solid #991616;
   text-shadow: 1px 1px black;
 }
@@ -86,7 +91,6 @@ header .header-arrow i {
   border-radius: 50%;
   background-color: #3a3a3a;
   padding: 0.4em 0.6em;
-  color: white;
 }
 header .header-arrow i:hover {
   background-color: #080808;
@@ -141,7 +145,7 @@ main {
   width: 100%;
   margin: 0;
 }
-.gallery h2,
+.gallery h1,
 .gallery p {
   text-align: center;
 }
@@ -191,12 +195,11 @@ main {
 }
 
 .read-more {
-  margin-top: 10vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1920x1280.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1920x1280.jpg");
+  margin-top: 10vh;
   color: white;
 }
 .read-more .text-container {
@@ -208,7 +211,7 @@ main {
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 1em;
   padding: 12px 24px;
 }
 .read-more .text-container button:hover {
@@ -218,12 +221,12 @@ main {
 }
 
 .statistics {
-  margin-top: 5vh;
-  padding-top: 7vh;
-  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1920x1280.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1920x1280.jpg");
+  margin-top: 5vh;
+  padding-top: 7vh;
   color: white;
 }
 .statistics h1 {
@@ -236,14 +239,14 @@ main {
   padding-top: 25vh;
 }
 .statistics .counter-container .counter .value {
-  font-size: 150%;
+  font-size: 1.5em;
 }
 
 footer {
   background-color: rgba(0, 0, 0, 0.87);
   color: #999999;
   padding-bottom: 3vh;
-  font-size: 90%;
+  font-size: 0.9em;
 }
 footer .container {
   padding-top: 10vh;
@@ -284,7 +287,7 @@ footer .container .social {
   padding-top: 1vh;
 }
 footer .container .social li a i {
-  font-size: 150%;
+  font-size: 1.5em;
   color: white;
 }
 footer .container .social li a i:hover {
@@ -303,6 +306,14 @@ footer .container .social li a i:hover {
   .statistics {
     background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1366x768.jpg");
   }
+
+  .intro {
+    padding-top: 15vh;
+  }
+
+  .gallery {
+    padding-top: 12vh;
+  }
 }
 @media only screen and (max-width: 768px) and (orientation: landscape) {
   header {
@@ -315,6 +326,37 @@ footer .container .social li a i:hover {
 
   .statistics {
     background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi768x432.jpg");
+  }
+
+  header section {
+    top: 35vh;
+    border-left: 3px solid #991616;
+    text-shadow: 1px 1px black;
+  }
+  header section h1 {
+    font-size: 1.2em;
+  }
+  header .header-arrow {
+    top: 82vh;
+  }
+  header .header-arrow i {
+    font-size: 0.9em;
+  }
+
+  .intro {
+    padding-top: 28vh;
+  }
+
+  .gallery {
+    padding-top: 28vh;
+  }
+
+  .statistics {
+    padding-top: 22vh;
+  }
+
+  footer {
+    padding-top: 22vh;
   }
 }
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
@@ -329,6 +371,31 @@ footer .container .social li a i:hover {
   .statistics {
     background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1024x1366.jpg");
   }
+
+  .header-arrow {
+    bottom: 10%;
+  }
+  .header-arrow i {
+    font-size: 1.5em;
+  }
+
+  .intro {
+    padding-top: 8vh;
+  }
+
+  .gallery {
+    padding-top: 8vh;
+  }
+
+  .statistics {
+    padding-top: 0vh;
+  }
+  .statistics h1 {
+    padding-top: 4vh;
+  }
+  .statistics .counter-container .counter {
+    padding-top: 20vh;
+  }
 }
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   header {
@@ -342,6 +409,13 @@ footer .container .social li a i:hover {
   .statistics {
     background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi768x1024.jpg");
   }
+
+  .statistics {
+    padding-top: 5vh;
+  }
+  .statistics .counter-container .counter {
+    padding-top: 10vh;
+  }
 }
 @media only screen and (max-width: 420px) and (orientation: portrait) {
   header {
@@ -354,6 +428,35 @@ footer .container .social li a i:hover {
 
   .statistics {
     background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi420x560.jpg");
+  }
+
+  header section {
+    font-size: 1.8em;
+  }
+  header .header-arrow {
+    bottom: 12%;
+  }
+  header .header-arrow i {
+    font-size: 1.2em;
+  }
+
+  .intro {
+    padding-top: 15vh;
+  }
+
+  .gallery {
+    padding-top: 14vh;
+  }
+
+  .statistics {
+    padding-top: 15vh;
+  }
+  .statistics .counter-container .counter {
+    padding-top: 16vh;
+  }
+
+  footer {
+    padding-top: 10vh;
   }
 }
 

@@ -4,7 +4,7 @@ import GalleryTile from './GalleryTile'
 function Gallery() {
     return (
         <section className="gallery container-fluid" id="gallery">
-            <h2>Gallery</h2>
+            <h1>Gallery</h1>
             <p>Lorem ipsum dolor sit amet consectetur</p>
             <div className="row">
                 <GalleryTile
