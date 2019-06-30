@@ -391,6 +391,37 @@ footer {
   }
   .gallery {
     padding-top: 28vh;
+    .row {
+      padding-left: 4%;
+      padding-right: 4%;
+
+      .tile {
+        padding-top: 3vh;
+
+        figure {
+          position: absolute;
+          right: 0;
+          padding-bottom: 50%;
+          width: 50%;
+          top: 50%;
+          transform: translateY(-45%);
+
+          img {
+            left: 7.5%;
+            width: 85%;
+            height: 85%;
+          }
+        }
+
+        h3 {
+          width: 45%;
+        }
+
+        p {
+          width: 45%;
+        }
+      }
+    }
   }
   .statistics {
     padding-top: 22vh;
@@ -448,31 +479,36 @@ footer {
   @include mediaImage(420x560);
   header {
     section {
-      font-size: 1.8em;
+      h1 {
+        font-size: 1.8em;
+      }
     }
+
     .header-arrow {
-      bottom: 12%;
       i {
         font-size: 1.2em;
       }
     }
   }
+
   .intro {
     padding-top: 15vh;
   }
+
   .gallery {
     padding-top: 14vh;
-  }
-  .statistics {
-    padding-top: 15vh;
 
-    .counter-container {
-      .counter {
-        padding-top: 16vh;
+    .statistics {
+      padding-top: 15vh;
+
+      .counter-container {
+        .counter {
+          padding-top: 16vh;
+        }
       }
     }
-  }
-  footer {
-    padding-top: 10vh;
+    footer {
+      padding-top: 10vh;
+    }
   }
 }
