@@ -1,0 +1,16 @@
+.statistics {
+  @include parallax();
+  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1920x1280.jpg");
+  margin-top: 5vh;
+  padding-top: 7vh;
+  color: white;
+
+  &__title {
+    padding-top: 5vh;
+    font-size: 2em;
+  }
+
+  &__counter-container {
+    padding-bottom: 5vh;
+  }
+}

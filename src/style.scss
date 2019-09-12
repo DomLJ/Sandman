@@ -1,34 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:700|Rubik&display=swap");
-
-@mixin mediaImage($proportions) {
-  header {
-    background-image: url("./images/Atacama#{$proportions}.jpg");
-  }
-  .read-more {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-      url("./images/Morocco#{$proportions}.jpg");
-  }
-  .statistics {
-    background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)),
-      url("./images/Gobi#{$proportions}.jpg");
-  }
-}
-
-@mixin parallax() {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-$primary-red: rgb(153, 22, 22);
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+@import "./scss/read-more.scss";
+@import "./scss/statistics.scss";
+@import "./scss/counter.scss";
 
 html {
   font-size: 1.3em;
   scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(66, 66, 66);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(20, 20, 20);
+  }
 }
 body {
   margin: 0;
-  background-color: rgb(247, 247, 247) !important;
 }
 h1,
 h2,
@@ -36,27 +31,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Karla", sans-serif;
+  @include font("Karla");
 }
 
 p,
 a {
-  font-family: "Rubik", sans-serif;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #888;
-}
-::-webkit-scrollbar-thumb {
-  background: rgb(66, 66, 66);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(20, 20, 20);
+  @include font("Rubik");
 }
 
-header {
+.header {
   height: 100vh;
   width: 100vw;
   background-image: url("./images/Atacama1920x1280.jpg");
@@ -100,7 +83,7 @@ header {
     color: white;
   }
 
-  .header-arrow {
+  &__arrow {
     width: 100%;
     position: absolute;
     top: 85%;
@@ -236,57 +219,6 @@ main {
   }
 }
 
-.read-more {
-  @include parallax();
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1920x1280.jpg");
-  margin-top: 10vh;
-  color: white;
-
-  .text-container {
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-    button {
-      border: 1px solid white;
-      background-color: rgba(0, 0, 0, 0);
-      text-align: center;
-      color: white;
-      font-size: 1em;
-      padding: 12px 24px;
-
-      &:hover {
-        transition: all 0.3s linear;
-        color: black;
-        background-color: rgba(255, 255, 255, 0.9);
-      }
-    }
-  }
-}
-
-.statistics {
-  @include parallax();
-  background-image: linear-gradient(rgba(23, 6, 90, 0.3), rgba(23, 6, 90, 0.3)), url("./images/Gobi1920x1280.jpg");
-  margin-top: 5vh;
-  padding-top: 7vh;
-  color: white;
-
-  h1 {
-    padding-top: 5vh;
-  }
-
-  .counter-container {
-    padding-bottom: 5vh;
-
-    .counter {
-      padding-top: 25vh;
-
-      .value {
-        font-size: 1.5em;
-      }
-    }
-  }
-}
-
 footer {
   $footer-color: rgb(153, 153, 153);
   background-color: rgba(0, 0, 0, 0.87);
@@ -368,7 +300,7 @@ footer {
 @media only screen and (max-width: 768px) and (orientation: landscape) {
   @include mediaImage(768x432);
 
-  header {
+  .header {
     section {
       top: 35vh;
       border-left: 3px solid $primary-red;
@@ -378,7 +310,7 @@ footer {
         font-size: 1.2em;
       }
     }
-    .header-arrow {
+    &__arrow {
       top: 82vh;
 
       i {
@@ -434,7 +366,7 @@ footer {
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
   @include mediaImage(1024x1366);
 
-  .header-arrow {
+  &__arrow {
     bottom: 10%;
     i {
       font-size: 1.5em;
@@ -451,10 +383,11 @@ footer {
   .statistics {
     padding-top: 0vh;
 
-    h1 {
+    &__title {
       padding-top: 4vh;
     }
-    .counter-container {
+
+    &__counter-container {
       .counter {
         padding-top: 20vh;
       }
@@ -467,7 +400,7 @@ footer {
   .statistics {
     padding-top: 5vh;
 
-    .counter-container {
+    &__counter-container {
       .counter {
         padding-top: 10vh;
       }
@@ -477,14 +410,14 @@ footer {
 
 @media only screen and (max-width: 420px) and (orientation: portrait) {
   @include mediaImage(420x560);
-  header {
+  .header {
     section {
       h1 {
         font-size: 1.8em;
       }
     }
 
-    .header-arrow {
+    &__arrow {
       i {
         font-size: 1.2em;
       }
@@ -501,7 +434,7 @@ footer {
     .statistics {
       padding-top: 15vh;
 
-      .counter-container {
+      &__counter-container {
         .counter {
           padding-top: 16vh;
         }

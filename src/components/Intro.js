@@ -2,11 +2,11 @@ import React from 'react'
 
 function Intro() {
     return (
-        <section className="intro container-fluid" id="intro">
-            <div className="intro-container row">
-                <div className="intro-theme col-lg-6 ">
-                    <h2 className="text-center text-md-left">
-                        <span className="span-underline">World</span> of <span className="span-color">Deserts</span>
+        <section className='intro container-fluid' id='intro'>
+            <div className='intro-container row'>
+                <div className='intro-theme col-lg-6 '>
+                    <h2 className='text-center text-md-left'>
+                        <span className='span-underline'>World</span> of <span className='span-color'>Deserts</span>
                     </h2>
                     <p>
                         Lorem ipsum dolor sit amet,
@@ -21,12 +21,12 @@ function Intro() {
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                    </p>
                 </div>
 
-                <div className="intro-photo col-lg-6 ">
-                    <figure className="img-container">
-                        <img src="./images/Mexico1200x800.jpg" alt="" ></img>
+                <div className='intro-photo col-lg-6'>
+                    <figure className='img-container'>
+                        <img src='./images/Mexico1200x800.jpg' alt='' ></img>
                     </figure>
                 </div>
             </div>
@@ -34,4 +34,4 @@ function Intro() {
     )
 }
 
-export default Intro;
+export default Intro

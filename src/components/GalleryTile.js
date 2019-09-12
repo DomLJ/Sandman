@@ -2,27 +2,27 @@ import React, { Component } from 'react'
 
 class GalleryTile extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
-            visibility: "invisible"
+            visibility: 'invisible'
         }
-        this.fadeIn=this.fadeIn.bind(this)
+        this.fadeIn = this.fadeIn.bind(this)
     }
 
     fadeIn() {
-        const id = this.props.place 
+        const id = this.props.place
         const targetPosition = document.getElementById(id).getBoundingClientRect().top
         const viewHeight = window.innerHeight
 
-        if (viewHeight > targetPosition && this.state.visibility === "invisible") {
+        if (viewHeight > targetPosition && this.state.visibility === 'invisible') {
             this.setState({
-                visibility: "visible"
+                visibility: 'visible'
             })
         }
     }
 
     componentDidMount() {
-        window.addEventListener("scroll", () => {
+        window.addEventListener('scroll', () => {
             this.fadeIn()
         })
     }
@@ -31,17 +31,17 @@ class GalleryTile extends Component {
         return (
             <div className={`tile ${this.state.visibility} col-lg-3 col-md-6`} id={this.props.place}>
                 <figure>
-                    <img src={`images/${this.props.src}`} alt="" title={this.props.credit}></img>
+                    <img src={`images/${this.props.src}`} alt='' title={this.props.credit}></img>
                 </figure>
                 <h3>{this.props.place}</h3>
                 <p>
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+                </p>
             </div>
         )
     }
 }
 
-export default GalleryTile;
+export default GalleryTile

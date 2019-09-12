@@ -5,14 +5,14 @@ import Statistics from './Statistics'
 import Intro from './Intro'
 
 function Main() {
-  return (
-    <main>
-      <Intro />
-      <ReadMore />
-      <Gallery />
-      <Statistics />
-    </main>
-  )
+    return (
+        <main>
+            <Intro />
+            <ReadMore />
+            <Gallery />
+            <Statistics />
+        </main>
+    )
 }
 
-export default Main;
+export default Main

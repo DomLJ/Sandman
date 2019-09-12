@@ -3,12 +3,12 @@ import React from 'react'
 function NavbarListItem(props) {
     return (
         <li
-            className="nav-item text-center"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar"
+            className='nav-item text-center'
+            data-toggle='collapse'
+            data-target='#collapsibleNavbar'
         >
             <a
-                className="nav-link text-light"
+                className='nav-link text-light'
                 href={props.link}
             >
                 {props.name}
@@ -17,4 +17,4 @@ function NavbarListItem(props) {
     )
 }
 
-export default NavbarListItem;
+export default NavbarListItem
