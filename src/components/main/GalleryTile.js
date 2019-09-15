@@ -4,7 +4,7 @@ class GalleryTile extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            visibility: 'invisible'
+            tileModifier: 'gallery-tile--invisible'
         }
         this.fadeIn = this.fadeIn.bind(this)
     }
@@ -14,9 +14,9 @@ class GalleryTile extends Component {
         const targetPosition = document.getElementById(id).getBoundingClientRect().top
         const viewHeight = window.innerHeight
 
-        if (viewHeight > targetPosition && this.state.visibility === 'invisible') {
+        if (viewHeight > targetPosition && this.state.tileModifier === 'gallery-tile--invisible') {
             this.setState({
-                visibility: 'visible'
+                tileModifier: ''
             })
         }
     }
@@ -29,12 +29,17 @@ class GalleryTile extends Component {
 
     render() {
         return (
-            <div className={`tile ${this.state.visibility} col-lg-3 col-md-6`} id={this.props.place}>
-                <figure>
-                    <img src={`images/${this.props.src}`} alt='' title={this.props.credit}></img>
+            <div className={`gallery-tile ${this.state.tileModifier} col-lg-3 col-md-6`} id={this.props.place}>
+                <figure className='gallery-tile__image-container'>
+                    <img
+                        className='gallery-tile__image'
+                        src={`images/${this.props.src}`}
+                        alt={this.props.place}
+                        title={this.props.credit}   
+                    ></img>
                 </figure>
-                <h3>{this.props.place}</h3>
-                <p>
+                <h3 className='gallery-tile__title'>{this.props.place}</h3>
+                <p className='gallery-tile__description'>
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

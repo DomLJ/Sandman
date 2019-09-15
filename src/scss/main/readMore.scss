@@ -1,8 +1,9 @@
 .read-more {
   @include parallax();
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./images/Morocco1920x1280.jpg");
-  margin-top: 10vh;
-  color: white;
+  background-image: linear-gradient($color-dark-translucent, $color-dark-translucent),
+    url("./images/Morocco1920x1280.jpg");
+  margin-top: 70px;
+  color: $color-light;
 
   &__container {
     padding-top: 5%;
@@ -12,17 +13,17 @@
   &__button {
     @include font("Rubik");
     text-transform: uppercase;
-    border: 1px solid white;
+    border: 1px solid $color-light;
     background-color: $transparent;
     text-align: center;
-    color: white;
+    color: $color-light;
     font-size: 1em;
     padding: 12px 24px;
 
     &:hover {
       transition: all 0.3s linear;
       color: black;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: $color-light-tranlucent;
     }
   }
 }

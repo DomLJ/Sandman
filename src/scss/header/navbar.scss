@@ -1,0 +1,25 @@
+.navbar {
+  transition: all 0.5s linear;
+
+  &--scrolled {
+    background-color: $color-black-translucent;
+  }
+
+  &__logo {
+    font-size: 1.35em;
+    font-weight: 700;
+    
+  }
+
+  &__link {
+    background-image: linear-gradient($color-secondary-red, $color-secondary-red);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size 0.3s;
+
+    &:hover {
+      background-size: 100% 3px;
+    }
+  }
+}

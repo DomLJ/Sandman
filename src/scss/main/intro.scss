@@ -1,0 +1,45 @@
+.intro {
+  padding-top: 85px;
+
+  &__container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  &__title {
+    &--underline {
+      background-image: linear-gradient($color-secondary-red, $color-secondary-red);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 48% 3px;
+      padding-bottom: 5px;
+    }
+
+    &--color {
+      color: $color-secondary-red;
+    }
+  }
+
+  &__content {
+    color: $color-grey;
+    padding-top: 10px;
+  }
+
+  &__figure {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding-left: 100%;
+    width: 0;
+    margin: auto;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}

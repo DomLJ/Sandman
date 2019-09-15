@@ -1,0 +1,52 @@
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./images/Atacama1920x1280.jpg");
+  @include parallax();
+  color: $color-light;
+
+  &__title-container {
+    position: absolute;
+    top: 22vh;
+    border-left: 4px solid $color-secondary-red;
+    text-shadow: 1px 1px $color-black;
+  }
+
+  &__scrolldown {
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    position: relative;
+    background-color: $color-dark;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    border-color: $color-light;
+
+    &:hover {
+      background-color: $color-very-dark;
+      border-color: $color-secondary-red;
+    }
+  }
+
+  &__arrow {
+    border: solid $color-black;
+    border-color: inherit;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: rotate(45deg);
+  }
+}

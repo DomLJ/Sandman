@@ -1,0 +1,38 @@
+.gallery-tile {
+  height: 100%;
+  flex-wrap: nowrap;
+  position: relative;
+  opacity: 1;
+  transition: all 1s;
+
+  &--invisible {
+    opacity: 0;
+  }
+
+  &__image-container {
+    display: block;
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+    margin: auto;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+  }
+
+  &__title {
+    text-align: center;
+    padding-top: 7px;
+  }
+
+  &__description {
+    color: $color-grey;
+  }
+}

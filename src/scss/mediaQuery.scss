@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1366px) and (orientation: landscape) {
+  @include mediaImage(1366x768);
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  @include mediaImage(768x432);
+
+  .counter {
+    padding-top: 44px;
+  }
+
+  .header {
+    &__title-container {
+      border-width: 3px;
+    }
+
+    &__title {
+      font-size: 1.6em;
+    }
+  }
+
+  .gallery {
+    &__content {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  .gallery-tile {
+    padding-top: 10px;
+
+    &__image-container {
+      position: absolute;
+      right: 0;
+      padding-bottom: 45%;
+      width: 45%;
+      top: 55%;
+      transform: translateY(-45%);
+    }
+
+    &__image {
+      left: 7.5%;
+      width: 85%;
+      height: 85%;
+    }
+
+    &__title {
+      text-align: left;
+      width: 45%;
+    }
+
+    &__description {
+      width: 45%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  @include mediaImage(1024x1366);
+
+  .counter {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  @include mediaImage(768x1024);
+}
+
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  @include mediaImage(420x560);
+
+  .header {
+    &__title {
+      font-size: 1.8em;
+    }
+  }
+}

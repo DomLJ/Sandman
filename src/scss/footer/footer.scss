@@ -1,0 +1,72 @@
+.footer {
+  background-color: $color-dark;
+  color: $color-dark-grey;
+  padding-bottom: 25px;
+  font-size: 0.9em;
+  padding-top: 85px;
+
+  &__list {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    padding-bottom: 7px;
+  }
+
+  &__link {
+    color: $color-dark-grey;
+
+    &:hover {
+      color: $color-primary-red;
+      text-decoration: none;
+    }
+  }
+
+  &__author {
+    border-top: 1px solid $color-dark-grey;
+    padding-top: 2vh;
+  }
+
+  &__social-list {
+    padding-left: 10px;
+  }
+
+  &__github {
+    font-size: 1.5em;
+    color: $color-light;
+
+    &:hover {
+      color: $color-primary-red;
+    }
+  }
+
+  &__title {
+    color: $color-light;
+    padding-bottom: 10px;
+  }
+
+  &__signature {
+    padding-top: 10px;
+  }
+
+  &__signature-description {
+    color: color-light;
+    margin-bottom: 0;
+    font-size: 1.1em;
+  }
+
+  &__signature-link {
+    font-size: 1.1em;
+    color: $color-primary-red;
+
+    &:hover {
+      color: $color-primary-red;
+    }
+  }
+
+  &__social {
+    padding-top: 10px;
+    list-style-type: none;
+  }
+}

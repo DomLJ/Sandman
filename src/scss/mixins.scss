@@ -21,3 +21,18 @@
 @mixin font($font) {
   font-family: $font, sans-serif;
 }
+
+@mixin scrollbar() {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(66, 66, 66);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(20, 20, 20);
+  }
+}

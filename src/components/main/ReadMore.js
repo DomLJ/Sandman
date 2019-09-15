@@ -4,7 +4,7 @@ function ReadMore() {
     return (
         <section className='read-more'>
             <div className='read-more__container text-container col-lg-6 offset-lg-5'>
-                <h3 className='read-more__title text-lg-left text-center'>Sahara Desert</h3>
+                <h2 className='read-more__title text-lg-left text-center'>Sahara Desert</h2>
                 <p className='read-more__content text-lg-left text-center'>
                     Consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

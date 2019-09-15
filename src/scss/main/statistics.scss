@@ -1,0 +1,11 @@
+.statistics {
+  @include parallax();
+  background-image: linear-gradient($color-violet-translucent, $color-violet-translucent),
+    url("./images/Gobi1920x1280.jpg");
+  padding-top: 85px;
+  color: $color-light;
+
+  &__counter-container {
+    padding-bottom: 35px;
+  }
+}

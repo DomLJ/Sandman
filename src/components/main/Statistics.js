@@ -3,7 +3,7 @@ import Counter from './Counter'
 
 function Statistics() {
     return (
-        <section className='statistics container-fluid' >
+        <section className='statistics container-fluid' id='statistics'>
             <h2 className='statistics__title text-center'>Gobi Desert</h2>
             <div className='statistics__counter-container row'>
                 <Counter countedNumber={122} duration={500} beginning={0} id={1} unit='&#176;F' />
