@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c0f1c29bfe3e68a9f58b7fc1a868e13",
+    "revision": "e9c6b59db7cd8df428d59c3d7b6d0dc8",
     "url": "/Sandman/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sandman/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "211e72e55866f0c2633e",
-    "url": "/Sandman/static/css/main.ea491c2d.chunk.css"
+    "revision": "091d5ea825acf1598b16",
+    "url": "/Sandman/static/css/main.e50d5f8b.chunk.css"
   },
   {
     "revision": "5cd0fcb0f3a69837189e",
     "url": "/Sandman/static/js/2.506480d7.chunk.js"
   },
   {
-    "revision": "211e72e55866f0c2633e",
+    "revision": "091d5ea825acf1598b16",
     "url": "/Sandman/static/js/main.c66c563e.chunk.js"
   },
   {
