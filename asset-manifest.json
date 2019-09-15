@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Sandman/static/css/main.07690428.chunk.css",
-    "main.js": "/Sandman/static/js/main.f2145770.chunk.js",
-    "main.js.map": "/Sandman/static/js/main.f2145770.chunk.js.map",
+    "main.css": "/Sandman/static/css/main.ea491c2d.chunk.css",
+    "main.js": "/Sandman/static/js/main.c66c563e.chunk.js",
+    "main.js.map": "/Sandman/static/js/main.c66c563e.chunk.js.map",
     "runtime~main.js": "/Sandman/static/js/runtime~main.41d44d7f.js",
     "runtime~main.js.map": "/Sandman/static/js/runtime~main.41d44d7f.js.map",
     "static/css/2.266e55a5.chunk.css": "/Sandman/static/css/2.266e55a5.chunk.css",
-    "static/js/2.85a11bac.chunk.js": "/Sandman/static/js/2.85a11bac.chunk.js",
-    "static/js/2.85a11bac.chunk.js.map": "/Sandman/static/js/2.85a11bac.chunk.js.map",
+    "static/js/2.506480d7.chunk.js": "/Sandman/static/js/2.506480d7.chunk.js",
+    "static/js/2.506480d7.chunk.js.map": "/Sandman/static/js/2.506480d7.chunk.js.map",
     "index.html": "/Sandman/index.html",
-    "precache-manifest.6c37d4e2a5db2c5cf49bfeb24fb53c52.js": "/Sandman/precache-manifest.6c37d4e2a5db2c5cf49bfeb24fb53c52.js",
+    "precache-manifest.2ee8ce589332a7f8b3f1ccc05870a5dd.js": "/Sandman/precache-manifest.2ee8ce589332a7f8b3f1ccc05870a5dd.js",
     "service-worker.js": "/Sandman/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/Sandman/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.07690428.chunk.css.map": "/Sandman/static/css/main.07690428.chunk.css.map",
-    "static/media/style.css": "/Sandman/static/media/Morocco768x432.bf980242.jpg"
+    "static/css/main.ea491c2d.chunk.css.map": "/Sandman/static/css/main.ea491c2d.chunk.css.map",
+    "static/media/style.scss": "/Sandman/static/media/Morocco768x432.bf980242.jpg"
   }
 }
