@@ -3,9 +3,8 @@ import Navbar from './Navbar'
 
 function Header() {
     return (
-        <header className='header col-lg-12' id='#'>
+        <header className='header' id='#'>
             <Navbar />
-
             <section className='header__title-container offset-1 col-md-3 col-sm-5 col-9'>
                 <h1 className='header__title'>Wonderful World Of Desert Templates</h1>
             </section>
